@@ -1,0 +1,265 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finanzas Argentinas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #202020;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #1a1a1a;
+            padding: 10px 20px;
+            color: white;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .header .indicators {
+            flex-grow: 1;
+            margin-left: 20px;
+        }
+        .header .indicators span {
+            margin-right: 20px;
+            font-size: 14px;
+        }
+        .header .indicators .highlight-positive {
+            color: #85ff00;
+        }
+        .header .indicators .highlight-negative {
+            color: #ff4d4d;
+        }
+        .header .icons {
+            display: flex;
+            align-items: center;
+        }
+        .header .icons img {
+            width: 20px;
+            height: 20px;
+            margin-left: 15px;
+            cursor: pointer;
+        }
+        header {
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .highlight-positive {
+            color: #85ff00;
+        }
+        .highlight-negative {
+            color: #ff4d4d;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+        }
+        .section {
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            padding: 10px;
+            flex: 1 1 calc(50% - 2px);
+            min-width: 300px;
+            margin: 0; /* Sin espacio entre las tablas */
+        }
+        h2 {
+            text-align: center;
+            color: white;
+            margin: 10px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid #444;
+            padding: 5px 8px;
+            text-align: center;
+        }
+        th {
+            background-color: #333;
+            font-weight: bold;
+        }
+        td {
+            color: #dcdcdc;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/Users/giannapanigadi/Documents/Proyecto /logo.png" alt="Logo">
+            <span>RealViews</span>
+        </div>
+        <div class="indicators">
+            <span>Dolar Oficial 1013 <span class="highlight-positive">0,15%</span></span>
+            <span>Dolar Blue 1190 <span class="highlight-positive">0,10%</span></span>
+            <span>Dolar MEP 1142 <span class="highlight-positive">0,86%</span></span>
+            <span>Dolar CCL 1168 <span class="highlight-positive">0,42%</span></span>
+            <span>S&P Merval 1.880.346,28 <span class="highlight-positive">0,62%</span></span>
+            <span>Riesgo País 952 <span class="highlight-negative">3,36%</span></span>
+        </div>
+        <div class="icons">
+            <img src="https://via.placeholder.com/20" alt="Mundo">
+            <img src="https://via.placeholder.com/20" alt="Inicio">
+            <img src="https://via.placeholder.com/20" alt="Correo">
+        </div>
+    </div>
+    <header>
+    <header>
+        Finanzas Argentinas
+    </header>
+    <div class="container">
+        <!-- Tabla Bonos en Pesos -->
+        <div class="section">
+            <h2>Bonos en Pesos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BONO</th>
+                        <th>PRECIO</th>
+                        <th>Paridad</th>
+                        <th>TNM</th>
+                        <th>TIR</th>
+                        <th>MD</th>
+                        <th>VTO</th>
+                        <th>% 1D</th>
+                        <th>MTD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>T5X4</td><td>4.835</td><td>100%</td><td>2,4%</td><td>2,41%</td><td>0.14</td><td>13/12/24</td><td class="highlight-positive">0,2%</td><td class="highlight-positive">2,7%</td></tr>
+                    <tr><td>T2X5</td><td>5.81</td><td>97%</td><td>9,0%</td><td>9,43%</td><td>0.29</td><td>14/02/25</td><td class="highlight-positive">0,2%</td><td class="highlight-positive">2,0%</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Tabla LECAPS -->
+        <div class="section">
+            <h2>LECAPS</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>LECAP</th>
+                        <th>Var%</th>
+                        <th>TEM</th>
+                        <th>TNA</th>
+                        <th>% Dir</th>
+                        <th>$ Last</th>
+                        <th>$ Vto</th>
+                        <th>Vto</th>
+                        <th>Días</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>S31O4</td><td class="highlight">0,10%</td><td>3,45%</td><td>41,5%</td><td>1,02%</td><td>102.7</td><td>103.75</td><td>31/10/24</td><td>9</td></tr>
+                    <tr><td>S11N4</td><td class="highlight">0,09%</td><td>3,41%</td><td>41,3%</td><td>2,26%</td><td>106.69</td><td>109.103</td><td>30/11/24</td><td>20</td></tr>
+                    <tr><td>S29N4</td><td class="highlight">0,04%</td><td>3,49%</td><td>42,7%</td><td>4,44%</td><td>129.243</td><td>133.35</td><td>29/11/24</td><td>29</td></tr>
+                    <tr><td>S13D4</td><td class="highlight">0,14%</td><td>3,57%</td><td>44,0%</td><td>6,26%</td><td>119.355</td><td>126.832</td><td>13/12/24</td><td>43</td></tr>
+                    <tr><td>S17E5</td><td class="highlight">0,53%</td><td>3,43%</td><td>43,2%</td><td>10,3%</td><td>118.95</td><td>131.185</td><td>17/01/25</td><td>87</td></tr>
+                    <tr><td>S31E5</td><td class="highlight">0,44%</td><td>3,51%</td><td>44,6%</td><td>12,3%</td><td>153.7</td><td>172.653</td><td>31/01/25</td><td>101</td></tr>
+                    <tr><td>S14F5</td><td class="highlight">0,24%</td><td>3,54%</td><td>45,3%</td><td>14,3%</td><td>106.1</td><td>121.236</td><td>14/02/25</td><td>115</td></tr>
+                    <tr><td>S28F5</td><td class="highlight">0,48%</td><td>3,50%</td><td>45,3%</td><td>15,9%</td><td>136.55</td><td>158.288</td><td>28/02/25</td><td>129</td></tr>
+                    <tr><td>S14M5</td><td class="highlight">0,23%</td><td>3,50%</td><td>45,5%</td><td>17,8%</td><td>106.9</td><td>125.964</td><td>14/03/25</td><td>143</td></tr>
+                    <tr><td>S31M5</td><td class="highlight">0,54%</td><td>3,55%</td><td>46,7%</td><td>20,5%</td><td>129.138</td><td>155.588</td><td>31/03/25</td><td>150</td></tr>
+                    <tr><td>S16A5</td><td class="highlight">0,52%</td><td>3,54%</td><td>47,0%</td><td>22,7%</td><td>106.98</td><td>131.211</td><td>16/04/25</td><td>170</td></tr>
+                    <tr><td>S28A5</td><td class="highlight">0,77%</td><td>3,51%</td><td>46,4%</td><td>24,2%</td><td>105.35</td><td>131.861</td><td>28/04/25</td><td>200</td></tr>
+                    <tr><td>S16Y5</td><td class="highlight">0,56%</td><td>3,54%</td><td>47,9%</td><td>27,0%</td><td>107.74</td><td>136.331</td><td>16/05/25</td><td>213</td></tr>
+                    <tr><td>S30Y5</td><td class="highlight">0,85%</td><td>3,49%</td><td>47,5%</td><td>28,6%</td><td>106.0</td><td>147.695</td><td>30/05/25</td><td>230</td></tr>
+                    <tr><td>S18J5</td><td class="highlight">0,89%</td><td>3,48%</td><td>47,9%</td><td>31,4%</td><td>112.439</td><td>136.0</td><td>18/06/25</td><td>239</td></tr>
+                    <tr><td>S30J5</td><td class="highlight">0,78%</td><td>3,50%</td><td>48,5%</td><td>33,3%</td><td>109.95</td><td>146.607</td><td>30/06/25</td><td>251</td></tr>
+                    <tr><td>S31L5</td><td class="highlight">1,05%</td><td>3,34%</td><td>46,4%</td><td>37,4%</td><td>107.5</td><td>147.74</td><td>31/07/25</td><td>281</td></tr>
+                    <tr><td>S15G5</td><td class="highlight">0,87%</td><td>3,46%</td><td>47,4%</td><td>40,1%</td><td>104.8</td><td>146.794</td><td>15/08/25</td><td>297</td></tr>
+                    <tr><td>S29G5</td><td class="highlight">0,77%</td><td>3,49%</td><td>49,7%</td><td>42,3%</td><td>110.799</td><td>157.799</td><td>29/08/25</td><td>311</td></tr>
+                    <tr><td>S12S5</td><td class="highlight">1,49%</td><td>3,38%</td><td>43,4%</td><td>43,4%</td><td>110.899</td><td>158.977</td><td>12/09/25</td><td>324</td></tr>
+                    <tr><td>S30S5</td><td class="highlight">1,75%</td><td>3,27%</td><td>47,3%</td><td>44,4%</td><td>110.6</td><td>159.734</td><td>30/09/25</td><td>343</td></tr>
+                    <tr><td>T17O5</td><td class="highlight">1,13%</td><td>3,34%</td><td>48,9%</td><td>48,3%</td><td>107.15</td><td>158.872</td><td>17/10/25</td><td>360</td></tr>
+                    <tr><td>T15D5</td><td class="highlight">0,93%</td><td>3,34%</td><td>50,7%</td><td>58,2%</td><td>108.0</td><td>170.883</td><td>15/12/25</td><td>419</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Tabla BOPREAL Hard Dolar -->
+        <div class="section">
+            <h2>BOPREAL Hard Dólar</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BONO</th>
+                        <th>PRECIO</th>
+                        <th>Paridad</th>
+                        <th>TNM</th>
+                        <th>TIR</th>
+                        <th>MD</th>
+                        <th>VTO</th>
+                        <th>% 1D</th>
+                        <th>MTD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>BP125</td><td>0.7391</td><td>99%</td><td>4,2%</td><td>4,29%</td><td>0.35</td><td>30/06/25</td><td class="highlight-negative">-2,85%</td><td class="highlight-positive">1,4%</td></tr>
+                    <tr><td>BPY26</td><td>0.8786</td><td>85%</td><td>13,2%</td><td>14,04%</td><td>2.25</td><td>31/05/26</td><td class="highlight-negative">-3,19%</td><td class="highlight-positive">3,5%</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Tabla BOPREAL MEP Link -->
+        <div class="section">
+            <h2>BOPREAL MEP Link</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BONO</th>
+                        <th>PRECIO</th>
+                        <th>Paridad</th>
+                        <th>TNM</th>
+                        <th>TIR</th>
+                        <th>MD</th>
+                        <th>VTO</th>
+                        <th>% 1D</th>
+                        <th>MTD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>BPOA7</td><td>0.9837</td><td>93%</td><td>16,7%</td><td>18,0%</td><td>0.46</td><td>30/04/25</td><td class="highlight-negative">-0,39%</td><td class="highlight-positive">9,1%</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Tabla Bonos en USD Ley Argentina -->
+        <div class="section">
+            <h2>Bonos en USD Ley Argentina</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>BONO</th>
+                        <th>PRECIO</th>
+                        <th>Paridad</th>
+                        <th>TNM</th>
+                        <th>TIR</th>
+                        <th>MD</th>
+                        <th>VTO</th>
+                        <th>% 1D</th>
+                        <th>MTD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>AL29</td><td>0.6884</td><td>69%</td><td>17,8%</td><td>19,38%</td><td>1.92</td><td>09/07/29</td><td class="highlight-negative">-1,01%</td><td class="highlight-positive">6,25%</td></tr>
+                    <tr><td>AL30</td><td>0.6198</td><td>66%</td><td>17,6%</td><td>19,06%</td><td>2.26</td><td>09/07/30</td><td class="highlight-positive">0,29%</td><td class="highlight-positive">6,37%</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+
